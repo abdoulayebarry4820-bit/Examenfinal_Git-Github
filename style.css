@@ -1,0 +1,227 @@
+/* Styles généraux pour le header */
+
+.site-header {
+    /* --- Propriétés pour le mode Sticky --- */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Assure que le menu reste au-dessus du contenu */
+    /* --- Style visuel --- */
+    background-color: hsl(198, 88%, 20%); /* Modifié pour un bleu très sombre */
+    color: white;
+    padding: 1rem 5%; /* Ajout d'une marge latérale pour décoller le texte des bords */
+    
+    /* --- Mise en page Flexbox --- */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    /* Optionnel : ajout d'une légère ombre pour donner de la profondeur au scroll */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Style du logo */
+.logo h1 {
+    margin: 0 20px; /* Marge pour le logo */
+}
+
+.logo h1 a {
+    color: white;
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 24px;
+}
+/* Style de la navigation */
+.site-header nav ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Met les éléments de liste sur la même ligne */
+}
+
+.site-header nav ul li {
+    margin-right: 20px; /* Espacement entre les liens */
+}
+
+.site-header nav ul li:last-child {
+    margin-right: 20px; /* Pas de marge à droite pour le dernier lien */
+}
+
+.site-header nav ul li a {
+    color: white;
+    text-decoration: none; /* Pas de soulignement */
+    padding: 10px 15px;
+    display: block; /* Pour que le padding fonctionne bien */
+}
+
+.site-header nav ul li a:hover {
+    background-color: #555; /* Effet au survol */
+    border-radius: 5px;
+}
+
+/* Styles pour le contenu principal (optionnel) */
+main {
+    padding: 20px;
+}
+body{
+    background-color: beige;
+}
+body,html{
+    height: 100vh
+
+}
+.slogan{background-image:url("assets/images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: hsl(2, 95%, 47%);
+    height: 100vh;
+}
+.slogan h1{
+    font-size: 20px;
+    font-size: 1.2rem;
+    margin-top: 200px;
+}
+.slogan p{
+    font-size: 20px;
+    margin-top: -2px;
+}
+.slogan .cta-buttom{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cours{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card .contact{
+    background-color: #00d0ff;
+    color: #0a0a0a;
+    text-decoration: none;  
+    border: none;
+    border-radius: 10px;  
+}
+.section2{
+  text-align  : left;
+}
+.section2 h2{
+    text-align: center;
+}
+.footer {
+  background-color: #2c3e50; /* Couleur sombre pro */
+  color: white;
+  padding: 40px 0 20px 0;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Aligne les colonnes l'une sous l'autre sur mobile */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  text-decoration: none;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.social-links a {
+  display: block; /* Ou 'inline-block' pour les mettre côte à côte */
+  margin-bottom: 5px;
+}
+
+.social-links a:hover {
+  color: white; /* Changement de couleur au survol */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #3e4f5f;
+  font-size: 0.8rem;
+}
+.debut{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.cars{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.moyens{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.car-moyens{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.pro{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.carte-pro{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.conteneur{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px ;
+    gap: 50px;
+    margin: 20px -100px 20px 100px ;
+    flex-direction: column;
+}
+td{
+    border: 2px solid hsl(56, 59%, 6%);
+}
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    background-color: beige;
+    text-align: center;
+}
+@media screen and ( max-width:1024px) {
+ p{background-color:hsl(22, 100%, 50%);
+   color: hsl(191, 81%, 4%);}
+ .conteneur{
+    flex-direction: column;
+ }     
+}
+
+
